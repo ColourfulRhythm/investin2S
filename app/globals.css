@@ -4,12 +4,34 @@
 
 @layer base {
   body {
-    @apply bg-amber-50 text-gray-900;
+    @apply bg-gradient-to-br from-stone-50 via-amber-50/30 to-stone-100 text-stone-900;
+    background-attachment: fixed;
   }
   
   :root {
-    --font-playfair: 'Playfair Display', serif;
-    --font-crimson: 'Crimson Text', serif;
+    --font-cormorant: 'Cormorant Garamond', serif;
+    --font-libre: 'Libre Baskerville', serif;
+  }
+}
+
+@layer utilities {
+  .luxury-shadow {
+    box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.1), 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+  }
+  
+  .luxury-border {
+    border: 1px solid rgba(212, 175, 55, 0.2);
+  }
+  
+  .gold-gradient {
+    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
+  }
+  
+  .gold-text {
+    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
