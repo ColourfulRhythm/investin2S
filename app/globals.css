@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-amber-50 text-gray-900;
+  }
+  
+  :root {
+    --font-playfair: 'Playfair Display', serif;
+    --font-crimson: 'Crimson Text', serif;
+  }
+}
+
